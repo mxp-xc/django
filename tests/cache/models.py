@@ -3,7 +3,7 @@ from django.utils import timezone
 
 
 def expensive_calculation():
-    expensive_calculation.num_runs += 1
+    expensive_calculation.num_runs += 1  # noqa
     return timezone.now()
 
 
